@@ -17,9 +17,6 @@ System.out.println("=== Para começar, insira a primeira tarefa ===");
 String item_lista = entrada.nextLine().trim().toLowerCase();
 lista.add(item_lista);
 
-System.out.println("=== Aqui vai a lista completa de afazeres ===");
-
-
 
 System.out.println("=== Ótimo, caso deseje adicionar mais tarefas, continue, caso deseje encerrar o programa, digite sair");
 
@@ -46,6 +43,19 @@ System.out.println(lista);
 
 }
 
+System.out.println("=== Agora, caso deseje exlcuir uma tarefa, digite 2 ===");
+
+int excluir = entrada.nextInt();
+
+if(excluir == 2){
+
+for(int b = 0; b < lista.size(); b++){
+
+System.out.println(b + "" + lista.get(b));
+
+}
+
+}
 
 
 entrada.close();
